@@ -65,7 +65,7 @@ const SignIn = () => {
           <p className="text-center text-sm mt-4">
             Don't have an account?{" "}
             <Link
-              href="#"
+              href="/sign-up"
               className="text-red-500 text-xs hover:underline"
             >
               Sign up for free!

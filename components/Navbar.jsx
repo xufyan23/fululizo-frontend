@@ -104,7 +104,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/signin" className="hover:text-gray-300">
+            <Link href="/sign-in" className="hover:text-gray-300">
               Sign In
             </Link>
           </li>
