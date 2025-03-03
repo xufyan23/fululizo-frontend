@@ -1,0 +1,73 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+  font-family: 'Droid Sans';
+  src: url('../public/fonts/DroidSans-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #182527;
+}
+
+.border-radius {
+  border-radius: 25px 100px 100px 25px;
+}
+
+.img-transform {
+  transform: translateX(26%);
+}
+
+.btn {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.heading-font {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.img-custom-border {
+  border-radius: 50%/40%;
+}
+
+.navbar-hover {
+  &:after {
+      content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #EF3340;
+    transition: width .2s;
+    transform: translateY(20px);
+  }
+  &:hover {
+    color: #EF3340;
+    &:after {
+      width: 100%;
+    }
+  }
+}
+.auth-bg {
+  background: url("../images/auth-bg.png") no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
